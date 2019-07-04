@@ -22,4 +22,12 @@
   <select id="selectAll" resultMap="BaseResultMap">
     SELECT <include refid="Base_Column_List"/> FROM item_info WHERE is_active = 1 ORDER BY create_time DESC
   </select>
+
+  <select id="selectAllByParams" resultMap="BaseResultMap">
+    SELECT <include refid="Base_Column_List"/> FROM item_info WHERE is_active = 1 
+    <if test="search != null and search != ''">
+      AND name LIKE concat('%', '${search}', '%')
+    </if>
+    ORDER BY create_time DESC
+  </select>
 </mapper>

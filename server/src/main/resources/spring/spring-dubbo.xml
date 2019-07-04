@@ -16,6 +16,9 @@
     <dubbo:protocol name="dubbo" />
 
     <!--消费方信息配置-->
-    <dubbo:application name="dubboOne-consume" owner="hblolj" organization="dubbox"/>
+    <dubbo:application name="dubboOne-consume-1" owner="hblolj" organization="dubbox">
+        <!--<dubbo:parameter key="qos.port" value="22222"/>-->
+        <dubbo:parameter key="qos.port" value="33333"/>
+    </dubbo:application>
 
 </beans>

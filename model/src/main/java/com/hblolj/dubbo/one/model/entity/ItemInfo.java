@@ -2,13 +2,17 @@ package com.hblolj.dubbo.one.model.entity;
 
 import lombok.Data;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 import javax.persistence.*;
 
 @Data
 @Table(name = "item_info")
-public class ItemInfo {
+public class ItemInfo implements Serializable{
+
+    private static final long serialVersionUID = -1013041025771894654L;
+
     /**
      * 主键
      */

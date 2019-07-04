@@ -3,6 +3,8 @@ package com.hblolj.dubbo.one.api.response;
 import com.hblolj.dubbo.one.api.enums.StatusCode;
 import lombok.Data;
 
+import java.io.Serializable;
+
 /**
  * @author: hblolj
  * @Date: 2019/7/3 14:17
@@ -10,7 +12,9 @@ import lombok.Data;
  * @Version:
  **/
 @Data
-public class BaseResponse<T> {
+public class BaseResponse<T> implements Serializable{
+
+    private static final long serialVersionUID = 5799434135135956302L;
 
     private Integer code;
 

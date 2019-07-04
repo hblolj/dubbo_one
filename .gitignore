@@ -5,6 +5,8 @@
 
 # User-specific stuff
 .idea/**
+dubboOne.[0-9]
+dubboOne.0.lck
 .idea/**/tasks.xml
 .idea/**/usage.statistics.xml
 .idea/**/dictionaries
