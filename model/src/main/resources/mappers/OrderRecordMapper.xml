@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.hblolj.dubbo.one.model.mapper.OrderRecordMapper" >
+  <resultMap id="BaseResultMap" type="com.hblolj.dubbo.one.model.entity.OrderRecord" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="item_id" property="itemId" jdbcType="INTEGER" />
+    <result column="total" property="total" jdbcType="INTEGER" />
+    <result column="customer_name" property="customerName" jdbcType="VARCHAR" />
+    <result column="order_time" property="orderTime" jdbcType="TIMESTAMP" />
+    <result column="is_active" property="isActive" jdbcType="INTEGER" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+
+  <insert id="insertOrder" keyProperty="id" useGeneratedKeys="true">
+    INSERT INTO order_record (item_id, total, customer_name, order_time)
+    VALUES (#{itemId}, #{total}, #{customerName}, #{orderTime})
+  </insert>
+</mapper>

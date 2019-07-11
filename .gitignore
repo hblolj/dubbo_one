@@ -5,6 +5,9 @@
 
 # User-specific stuff
 .idea/**
+api/target/**
+model/target/**
+server/target/**
 dubboOne.[0-9]
 dubboOne.0.lck
 .idea/**/tasks.xml

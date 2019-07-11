@@ -21,10 +21,14 @@
 
         <sqlMapGenerator targetPackage="mapper" targetProject="src/main/resources"/>
 
-        <javaClientGenerator targetPackage="com.hblolj.dubbo.one.model.mapper" targetProject="src/main/java"
+        <javaClientGenerator targetPackage="com.hblolj.dubbo.one.model.mappers" targetProject="src/main/java"
                              type="XMLMAPPER"/>
 
-        <table tableName="item_info" domainObjectName="ItemInfo">
+        <!--<table tableName="item_info" domainObjectName="ItemInfo">-->
+            <!--<generatedKey column="id" sqlStatement="Mysql" identity="true"/>-->
+        <!--</table>-->
+
+        <table tableName="order_record" domainObjectName="OrderRecord">
             <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
         </table>
     </context>

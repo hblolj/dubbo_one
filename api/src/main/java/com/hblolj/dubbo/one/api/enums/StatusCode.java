@@ -12,7 +12,8 @@ import lombok.Getter;
 public enum  StatusCode {
     SUCCESS(0, "成功"),
     FAIL(-1, "失败"),
-    INVALID_PARAM(400, "无效的参数")
+    INVALID_PARAM(400, "无效的参数"),
+    ItemNotExist(201, "商品不存在")
     ;
 
     private Integer code;
